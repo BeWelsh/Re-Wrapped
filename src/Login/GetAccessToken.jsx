@@ -1,5 +1,6 @@
+import React from 'react'
 import { useEffect } from "react";
-
+//Secret: "8f7efe34265748668d254a3da349f30c"
 /**
  * This will check the callback url for a code
  * If there is one,

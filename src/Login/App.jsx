@@ -1,10 +1,10 @@
+import React from 'react'
 import './App.css'
 
 function App() {
     //Probably a bad area to store sensitive info like CID
-    //Replace with kaylees stuff
-    const CLIENT_ID = "15c2b61c4ff349a6bb4821383d89dc1f";
-    const REDIRECT_URI = "http://localhost:5173/callback";
+    const CLIENT_ID = "0f36460fb586415ca4290ffdc712ea68";
+    const REDIRECT_URI = "http://localhost:8080/callback";
     const AUTH_ENDPOINT = "https://accounts.spotify.com/authorize";
     const SCOPES = [
         "user-top-read",
@@ -26,3 +26,5 @@ function App() {
 }
 
 export default App
+
+//AQBbTQ8kVnJsSlUjUny1zKZYZCgIj3TtokN2JzaEAAMQUFGGvEjdj6Qa_SsnmRmXfhgrpNM1g6uRHGwDrLiWQvHuNOKbqh2oVeDKDUqe8Asi0OO8XiNwxApHkkNp9ahZc52kLZ7YSAJJN0WUKdrD_A5ivhf3LVeZT-dJINc9mzzF-rdZjHyH3clAaxRgE6dlQd79qiuBJvHv_gnRBCC7bNj0W0UXbUHO5a6HoQ

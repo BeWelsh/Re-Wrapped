@@ -1,0 +1,112 @@
+/* 1. Import an energetic festival font (optional) */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+/* 2. Main container for the Rolling Loud festival layout */
+.rolling-loud-container {
+  background: linear-gradient(135deg, #ff69b4 10%, #ff6f91 40%, #ff9671 70%, #ffc75f 100%);
+  /* If you have a cool background graphic, layer it under the gradient:
+     background: url('path-to-your-cool-graphic.jpg') center/cover no-repeat,
+                 linear-gradient(...);
+  */
+  color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  font-family: 'Bangers', cursive, sans-serif; /* Fallback to sans-serif if not loaded */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* 3. Title at the top ("Your Rolling Loud Lineup") */
+.rolling-loud-title {
+  font-size: 3.5rem;
+  color: #fff;
+  margin-bottom: 50px;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #000; /* Adds a festival poster vibe */
+}
+
+/* 4. Main wrapper for each "section" (each headliner block) */
+.rolling-loud-section {
+  margin-bottom: 60px;
+}
+
+/* 5. Headliner (big, bold, uppercase) */
+.rolling-loud-headliner {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #ffd700; /* Gold color for emphasis */
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: block;
+  text-shadow: 3px 3px 0 #000;
+  transition: transform 0.2s ease;
+}
+
+.rolling-loud-headliner:hover {
+  transform: scale(1.05);
+}
+
+/* 6. Secondary artists (mid-sized, bright colors) */
+.rolling-loud-secondary-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.rolling-loud-secondary {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffa500; /* Orange color for secondary artists */
+  margin: 8px;
+  display: inline-block;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #000;
+  transition: transform 0.2s ease;
+}
+
+.rolling-loud-secondary:hover {
+  transform: scale(1.1);
+}
+
+/* 7. Other artists (smaller, in a flex/wrap container) */
+.rolling-loud-other-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 80%;
+  margin: 10px auto 0;
+}
+
+.rolling-loud-other {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin: 5px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 #000;
+  transition: color 0.2s ease;
+}
+
+.rolling-loud-other:hover {
+  color: #ffe600;
+}
+
+/* 8. Responsive adjustments (optional) */
+@media (max-width: 768px) {
+  .rolling-loud-title {
+    font-size: 2.5rem;
+  }
+  .rolling-loud-headliner {
+    font-size: 2.2rem;
+  }
+  .rolling-loud-secondary {
+    font-size: 1.6rem;
+  }
+  .rolling-loud-other {
+    font-size: 1.2rem;
+  }
+}

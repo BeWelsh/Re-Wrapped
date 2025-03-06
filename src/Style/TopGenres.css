@@ -1,0 +1,56 @@
+.genres-container {
+    max-width: 300px;
+    margin: 40px auto;
+    background: linear-gradient(135deg, #1db954, #191414);
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .genres-container h2 {
+    margin-bottom: 15px;
+    font-family: "Arial", sans-serif;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+  
+  .genres-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .genre-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8px 0;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  
+  .genre-rank {
+    margin-right: 8px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px 8px;
+  }
+  
+  .genre-name {
+    margin: 0 8px;
+    text-transform: capitalize;
+  }
+  
+  .genre-count {
+    margin-left: 8px;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #fff;
+  }
+  

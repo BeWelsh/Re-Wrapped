@@ -1,0 +1,53 @@
+.wrapper {
+    position: relative;
+    width: 100vw;
+    overflow: hidden; /* Hide the pages that overflow horizontally */
+    height: 100vh;    /* Optional: make each "page" fill the screen */
+    background-color: #121212;
+  }
+  
+  .pages-container {
+    display: flex;
+    transition: transform 0.4s ease;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .page {
+    flex: 0 0 100%; /* Each page takes up 100% of the viewport width */
+    box-sizing: border-box;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    overflow-y: auto; /* Scroll vertically within the page if content is long */
+    background: #181818;
+    /* You can style each "page" differently if you want */
+  }
+  
+  /* Navigation Buttons */
+  .nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    z-index: 999;
+  }
+  
+  .left-button {
+    left: 10px;
+  }
+  
+  .right-button {
+    right: 10px;
+  }
+  
+  .nav-button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }

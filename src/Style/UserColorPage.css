@@ -1,0 +1,36 @@
+/* Full-screen background */
+.color-page {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.5s ease-in-out;
+  }
+  
+  /* Centered content */
+  .color-box {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8); /* Dark glassy effect */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Color display box */
+  .color-display {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    margin: 20px auto;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Color hex code */
+  .color-code {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    letter-spacing: 2px;
+  }
+  

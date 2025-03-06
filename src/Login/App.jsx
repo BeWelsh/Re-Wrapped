@@ -6,6 +6,7 @@ import TopArtistsDisplay from '../Components/TopArtists.jsx'
 import TopGenres from '../Components/TopGenres.jsx';
 import HorizontalPages from '../Components/HorizontalPages.jsx';
 import TopTracks from '../Components/TopTracks.jsx'
+import UserColor from '../Components/UserColor.jsx'
 
 function App() {
     //Probably a bad area to store sensitive info like CID
@@ -39,7 +40,9 @@ function App() {
     }
     const pages = [<TopArtistsDisplay topArtists={topArtists}/>,
                    <TopGenres genreData={topGenres} />,
-                   <TopTracks t={tracks} />]
+                   <TopTracks t={tracks} />,
+                   <UserColor tracks={tracks} />
+                ]
     return <HorizontalPages pages ={pages} />
 }
 

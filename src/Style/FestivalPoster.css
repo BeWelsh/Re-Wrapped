@@ -1,112 +1,117 @@
-/* 1. Import an energetic festival font (optional) */
-@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+/* Import a bold festival-style font */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-/* 2. Main container for the Rolling Loud festival layout */
 .rolling-loud-container {
-  background: linear-gradient(135deg, #ff69b4 10%, #ff6f91 40%, #ff9671 70%, #ffc75f 100%);
-  /* If you have a cool background graphic, layer it under the gradient:
-     background: url('path-to-your-cool-graphic.jpg') center/cover no-repeat,
-                 linear-gradient(...);
-  */
+  background: linear-gradient(135deg, #ff69b4, #ff9671);
   color: #ffffff;
   text-align: center;
-  padding: 30px;
+  padding: 30px 20px;
   min-height: 100vh;
   box-sizing: border-box;
-  font-family: 'Bangers', cursive, sans-serif; /* Fallback to sans-serif if not loaded */
+  font-family: 'Bebas Neue', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
-/* 3. Title at the top ("Your Rolling Loud Lineup") */
+/* Title (Rolling Loud Header) */
 .rolling-loud-title {
-  font-size: 3.5rem;
-  color: #fff;
-  margin-bottom: 50px;
-  letter-spacing: 2px;
-  text-shadow: 2px 2px 0 #000; /* Adds a festival poster vibe */
-}
-
-/* 4. Main wrapper for each "section" (each headliner block) */
-.rolling-loud-section {
-  margin-bottom: 60px;
-}
-
-/* 5. Headliner (big, bold, uppercase) */
-.rolling-loud-headliner {
-  font-size: 3rem;
+  font-size: 6.5rem;
   font-weight: bold;
-  color: #ffd700; /* Gold color for emphasis */
+  /*margin-bottom: 10px;*/
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Headliners - Biggest Names */
+.rolling-loud-headliner {
+  font-size: 8rem;
+  font-weight: bold;
+  color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 20px;
   display: block;
-  text-shadow: 3px 3px 0 #000;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.3s;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
 .rolling-loud-headliner:hover {
   transform: scale(1.05);
+  opacity: 0.9;
 }
 
-/* 6. Secondary artists (mid-sized, bright colors) */
+/* Secondary artists */
 .rolling-loud-secondary-container {
-  margin-top: 10px;
-  margin-bottom: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px; /* Less vertical space */
 }
 
 .rolling-loud-secondary {
-  font-size: 2rem;
+  font-size: 3.5rem;
   font-weight: 600;
-  color: #ffa500; /* Orange color for secondary artists */
-  margin: 8px;
+  color: #ffcc00;
+  margin-right: 10px;
   display: inline-block;
   text-decoration: none;
-  text-shadow: 2px 2px 0 #000;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
 }
 
 .rolling-loud-secondary:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
-/* 7. Other artists (smaller, in a flex/wrap container) */
+/* Other artists - Smallest font */
 .rolling-loud-other-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 80%;
-  margin: 10px auto 0;
+  max-width: 90%;
+  margin-top: 10px; /* Less vertical space */
 }
 
 .rolling-loud-other {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 500;
   color: #fff;
   margin: 5px 10px;
   text-decoration: none;
-  text-shadow: 1px 1px 0 #000;
-  transition: color 0.2s ease;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+  transition: opacity 0.2s ease;
 }
 
 .rolling-loud-other:hover {
-  color: #ffe600;
+  opacity: 0.8;
 }
 
-/* 8. Responsive adjustments (optional) */
-@media (max-width: 768px) {
+/* Responsive adjustments */
+@media (max-width: 1024px) {
   .rolling-loud-title {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
   .rolling-loud-headliner {
-    font-size: 2.2rem;
+    font-size: 8rem;
   }
   .rolling-loud-secondary {
-    font-size: 1.6rem;
+    font-size: 3rem;
   }
   .rolling-loud-other {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+}
+}
+
+@media (max-width: 768px) {
+  .rolling-loud-title {
+    font-size: 4.5rem;
+  }
+  .rolling-loud-headliner {
+    font-size: 8rem;
+  }
+  .rolling-loud-secondary {
+    font-size: 2.5rem;
+  }
+  .rolling-loud-other {
+    font-size: 1.3rem;
   }
 }
